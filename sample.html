@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Khizer Inam - Portfolio</title>
+  <!-- Bootstrap CDN for responsiveness and styling -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div id="particles-js"></div>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">Khizer Inam</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="d-flex align-items-center justify-content-center">
+    <div class="container text-center">
+      <h1 data-aos="fade-up">Hi, I'm Khizer Inam</h1>
+      <p class="lead" data-aos="fade-up" data-aos-delay="300">I'm a <span class="typed-text"></span></p>
+      <div data-aos="fade-up" data-aos-delay="600">
+        <a href="#about" class="btn btn-primary btn-lg mt-4">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2 class="mb-4">About Me</h2>
+      <p>
+        Hello! I'm Khizer Inam, a passionate web developer with experience in building responsive and user-friendly websites.
+        I specialize in HTML, CSS, JavaScript, and modern frameworks like React.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="mb-4">Skills</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="skill-item" data-aos="fade-up">
+            <i class="fas fa-code skill-icon"></i>
+            <h4>Frontend</h4>
+            <ul>
+              <li>HTML5</li>
+              <li>CSS3 / Bootstrap</li>
+              <li>JavaScript / React</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="skill-item" data-aos="fade-up">
+            <i class="fas fa-server skill-icon"></i>
+            <h4>Backend</h4>
+            <ul>
+              <li>Node.js</li>
+              <li>Express.js</li>
+              <li>RESTful APIs</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="skill-item" data-aos="fade-up">
+            <i class="fas fa-tools skill-icon"></i>
+            <h4>Tools &amp; Others</h4>
+            <ul>
+              <li>Git &amp; GitHub</li>
+              <li>Responsive Design</li>
+              <li>Agile Methodologies</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-5">
+    <div class="container">
+      <h2 class="mb-4">Projects</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="card">
+            <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Project 1" />
+            <div class="card-body">
+              <h5 class="card-title">Project One</h5>
+              <p class="card-text">
+                A brief description of your project. Highlight key features and technologies used.
+              </p>
+              <a href="#" class="btn btn-primary">View Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="card">
+            <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Project 2" />
+            <div class="card-body">
+              <h5 class="card-title">Project Two</h5>
+              <p class="card-text">
+                A brief description of your project. Highlight key features and technologies used.
+              </p>
+              <a href="#" class="btn btn-primary">View Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="card">
+            <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Project 3" />
+            <div class="card-body">
+              <h5 class="card-title">Project Three</h5>
+              <p class="card-text">
+                A brief description of your project. Highlight key features and technologies used.
+              </p>
+              <a href="#" class="btn btn-primary">View Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="mb-4">Contact</h2>
+      <form id="contactForm">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Your Name" />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="Your Email" />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea class="form-control" id="message" rows="5" placeholder="Your Message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Chatbot Widget -->
+  <div id="chatbot">
+    <div id="chatbot-header">Chat with me</div>
+    <div id="chatbot-messages"></div>
+    <div id="chatbot-input">
+      <input type="text" id="chatbot-user-input" placeholder="Type your message..." />
+      <button id="chatbot-send-btn">Send</button>
+    </div>
+  </div>
+  <button id="chatbot-toggle">Chat</button>
+
+  <!-- Optional Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script>
+    // Fallback check if libraries aren't loaded
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof AOS === 'undefined') {
+        console.warn('AOS library is not loaded');
+      }
+      if (typeof gsap === 'undefined') {
+        console.warn('GSAP library is not loaded');
+      }
+      if (typeof particlesJS === 'undefined') {
+        console.warn('Particles.js library is not loaded');
+      }
+    });
+  </script>
+  <script>
+    // Check if server is running
+    async function checkServerStatus() {
+      const statusIndicator = document.createElement('div');
+      statusIndicator.style.position = 'fixed';
+      statusIndicator.style.bottom = '150px';
+      statusIndicator.style.right = '20px';
+      statusIndicator.style.padding = '5px 10px';
+      statusIndicator.style.borderRadius = '5px';
+      statusIndicator.style.fontSize = '12px';
+      statusIndicator.style.zIndex = '1000';
+      
+      try {
+        const response = await fetch('http://localhost:3000/api/chat', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ message: 'ping' }),
+          // Short timeout to quickly detect if server is available
+          signal: AbortSignal.timeout(2000)
+        });
+        
+        if (response.ok) {
+          statusIndicator.textContent = 'Server: Online';
+          statusIndicator.style.backgroundColor = '#4caf50';
+          statusIndicator.style.color = 'white';
+        } else {
+          throw new Error('Server error');
+        }
+      } catch (error) {
+        statusIndicator.textContent = 'Server: Offline (run npm start)';
+        statusIndicator.style.backgroundColor = '#f44336';
+        statusIndicator.style.color = 'white';
+      }
+      
+      document.body.appendChild(statusIndicator);
+    }
+    
+    document.addEventListener('DOMContentLoaded', checkServerStatus);
+  </script>
+</body>
+</html>
